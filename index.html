@@ -4,23 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Navigation -->
     <header>
         <h1>Bienvenue sur mon portfolio</h1>
         <nav>
-            <a href="about.html">À propos</a>
-            <a href="projects.html">Projets</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Je suis Hary Tahiana ANDRIATORAKA</h2>
-        <p>Étudiant en systèmes embarqués et passionné par la technologie.</p>
+     <!-- Section Accueil avec image de fond -->
+     <section class="hero">
+        <div class="hero-text">
+            <h2>Je suis Hary Tahiana ANDRIATORAKA</h2>
+            <p>Étudiant en systèmes embarqués et passionné par la technologie.</p>
+            <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
     </section>
 
+    <!-- Section Profil -->
+    <section id="profil">
+        <h2>Mon Profil</h2>
+        <p>Étudiant en Master 1 « Systèmes embarqués et systèmes intégrés » à l’Université Bretagne Sud, je bénéficie d’une solide expérience en gestion de projets électriques (basse et très basse tension) et d’un bagage managérial important. Mes compétences techniques avancées en programmation, en IDE de microcontrôleurs et en réseaux IoT, associées à ma capacité à piloter des équipes, me permettent de mener à bien des projets complexes tout en respectant les contraintes de qualité, de budget et de délais.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h3>Contact</h3>
+        <ul>
+            <li>Email : <a href="mailto:andriatorakahary@gmail.com">andriatorakahary@gmail.com</a></li>
+            <li>Adresse : 4 rue Anatole, Lanester, 56600 France</li>
+            <li>Téléphone : +33 7 58 79 43 06</li>
+            <li>Statut : Marié</li>
+            <li>Permis A et B</li>
+        </ul>
+    </section>    
+
+    <!-- Section Expériences professionnelles -->
+    <section id="experiences">
+        <h3>Expériences professionnelles</h3>
+        <div class="experience">
+            <h4>Conducteur de travaux (CFA) - Guilmann Madagascar</h4>
+            <p>Juin 2019 - Février 2021</p>
+            <ul>
+                <li>Gestion complète des projets d’installation électrique : préparation, planification, budgétisation et suivi jusqu'à la réception finale.</li>
+                <li>Encadrement des équipes sur le terrain et coordination avec les sous-traitants.</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h4>Technicien de Maintenance - JB Madagascar</h4>
+            <p>Février 2019 - Juin 2019</p>
+            <ul>
+                <li>Installation, réglage et maintenance des machines industrielles.</li>
+                <li>Participation à l'amélioration continue des procédures de maintenance.</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h4>Chargé d'études (Stagiaire) - SEEM Madagascar</h4>
+            <p>Juin 2018 - Septembre 2018</p>
+            <ul>
+                <li>Élaboration des plans d’avant-projet et des dossiers techniques.</li>
+                <li>Suivi des installations électriques sur chantier.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Formation -->
+    <section id="formation">
+        <h3>Formation</h3>
+        <ul>
+            <li>Master 1 : Systèmes embarqués - Systèmes intégrés, Université Bretagne Sud, 2024-2025</li>
+            <li>Ingéniorat : Génie des systèmes industriels, IST Antananarivo, 2021-2024</li>
+            <li>Licence : Génie des systèmes automatisés, IST Antananarivo, 2018</li>
+        </ul>
+    </section>
+
+    <!-- Section Compétences techniques -->
+    <section id="competences">
+        <h3>Compétences techniques</h3>
+        <div>
+            <h4>Systèmes embarqués & IDE</h4>
+            <ul>
+                <li>Forte connaissance de l’IDE STM32 (STM32CubeIDE, FreeRTOS)</li>
+                <li>Programmation sur IDE Arduino</li>
+                <li>Connaissances avancées en C, C++, Python, VHDL, Julia</li>
+            </ul>
+        </div>
+        <div>
+            <h4>IoT & Réseaux</h4>
+            <ul>
+                <li>Protocoles de communication : TCP/IP, MQTT</li>
+                <li>Connaissances en réseaux LoRaWAN</li>
+                <li>Configuration et intégration de solutions connectées</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Gestion de projet</h4>
+            <ul>
+                <li>Coordination, budgétisation, suivi des équipes</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Centres d'intérêt -->
+    <section id="centres-interet">
+        <h3>Centres d'intérêt</h3>
+        <ul>
+            <li>Bénévolat - Leo Club Antananarivo, Ivolanitra, Madagascar</li>
+            <li>Tennis - Club de Madagascar</li>
+            <li>Basketball</li>
+            <li>Football</li>
+        </ul>
+    </section>
+
+    <!-- Section Compétences linguistiques -->
+    <section id="linguistiques">
+        <h3>Compétences linguistiques</h3>
+        <ul>
+            <li>Malgache : Langue maternelle</li>
+            <li>Anglais : Niveau expérimenté (Certificat LanguageCert International ESOL : B2, B1, A2)</li>
+            <li>Français : Niveau expérimenté (DELF B2 - Alliance Française d’Antananarivo)</li>
+        </ul>
+    </section>
+    
+    <!-- Footer -->
     <footer>
         <p>© 2025 Hary Tahiana ANDRIATORAKA - Tous droits réservés.</p>
     </footer>

@@ -1,34 +1,154 @@
+/* Styles de base */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Amatic SC', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header & Navigation */
 header {
-    background-color: #333;
+    background: #034555;
     color: white;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
 }
 
-nav a {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    margin: 10px;
-    font-size: 18px;
+    font-weight: bold;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-footer {
-    background-color: #333;
+/* Section Accueil */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url('imgressources/profil.jpg.jpg') no-repeat center center/cover;
     color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+/* Section Profil */
+#profil {
+    padding: 20px;
+    background-color: #ecf0f1;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#profil h2 {
+    color: #2c3e50;
+}
+
+/* Section Contact */
+#contact {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    margin: 5px 0;
+}
+
+/* Section Expériences professionnelles */
+#experiences {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.experience h4 {
+    color: #e67e22;
+}
+
+.experience ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Section Formation et Compétences */
+section h3 {
+    color: #2c3e50;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 5px 0;
+}
+
+/* Section Centres d'intérêt */
+#centres-interet, #linguistiques {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
     padding: 10px;
-    position: fixed;
+    background: #034555;
+    color: white;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
