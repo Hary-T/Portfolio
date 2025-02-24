@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
+
+      <!-- Lien vers le fichier CSS pour appliquer le style -->  
     <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
 </head>
-<body>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Navigation -->
+<body>
+     <!-- Importation d'une police Google Fonts (Amatic SC) pour améliorer l'apparence du texte -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- Barre de navigation en haut de la page -->
     <header>
         <h1>Bienvenue sur mon portfolio</h1>
         <nav>
@@ -22,22 +27,23 @@
         </nav>
     </header>
 
-     <!-- Section Accueil avec image de fond -->
+    <!-- Section principale d'accueil avec une image de fond (gérée via CSS) -->
      <section class="hero">
         <div class="hero-text">
             <h2>Je suis Hary Tahiana ANDRIATORAKA</h2>
             <p>Étudiant en systèmes embarqués et passionné par la technologie.</p>
+            <!-- Bouton qui redirige vers la section des projets -->
             <a href="#projets" class="btn">Voir mes projets</a>
         </div>
     </section>
 
-    <!-- Section Profil -->
+    <!-- Section de présentation (profil personnel) -->
     <section id="profil">
         <h2>Mon Profil</h2>
         <p>Étudiant en Master 1 « Systèmes embarqués et systèmes intégrés » à l’Université Bretagne Sud, je bénéficie d’une solide expérience en gestion de projets électriques (basse et très basse tension) et d’un bagage managérial important. Mes compétences techniques avancées en programmation, en IDE de microcontrôleurs et en réseaux IoT, associées à ma capacité à piloter des équipes, me permettent de mener à bien des projets complexes tout en respectant les contraintes de qualité, de budget et de délais.</p>
     </section>
 
-    <!-- Section Contact -->
+    <!-- Section Contact : Informations personnelles et coordonnées -->
     <section id="contact">
         <h3>Contact</h3>
         <ul>
@@ -52,6 +58,8 @@
     <!-- Section Expériences professionnelles -->
     <section id="experiences">
         <h3>Expériences professionnelles</h3>
+
+        <!-- Expérience 1 -->
         <div class="experience">
             <h4>Conducteur de travaux (CFA) - Guilmann Madagascar</h4>
             <p>Juin 2019 - Février 2021</p>
@@ -60,6 +68,8 @@
                 <li>Encadrement des équipes sur le terrain et coordination avec les sous-traitants.</li>
             </ul>
         </div>
+
+        <!-- Expérience 2 -->
         <div class="experience">
             <h4>Technicien de Maintenance - JB Madagascar</h4>
             <p>Février 2019 - Juin 2019</p>
@@ -68,6 +78,8 @@
                 <li>Participation à l'amélioration continue des procédures de maintenance.</li>
             </ul>
         </div>
+
+        <!-- Expérience 3 -->
         <div class="experience">
             <h4>Chargé d'études (Stagiaire) - SEEM Madagascar</h4>
             <p>Juin 2018 - Septembre 2018</p>
@@ -78,7 +90,7 @@
         </div>
     </section>
 
-    <!-- Section Formation -->
+    <!-- Section sur le parcours académique -->
     <section id="formation">
         <h3>Formation</h3>
         <ul>
@@ -91,6 +103,8 @@
     <!-- Section Compétences techniques -->
     <section id="competences">
         <h3>Compétences techniques</h3>
+        
+        <!-- Systèmes embarqués -->
         <div>
             <h4>Systèmes embarqués & IDE</h4>
             <ul>
@@ -99,6 +113,8 @@
                 <li>Connaissances avancées en C, C++, Python, VHDL, Julia</li>
             </ul>
         </div>
+
+        <!-- Réseaux et IoT -->
         <div>
             <h4>IoT & Réseaux</h4>
             <ul>
@@ -107,6 +123,8 @@
                 <li>Configuration et intégration de solutions connectées</li>
             </ul>
         </div>
+
+        <!-- Gestion de projet -->
         <div>
             <h4>Gestion de projet</h4>
             <ul>
@@ -136,7 +154,7 @@
         </ul>
     </section>
     
-    <!-- Footer -->
+    <!-- Pied de page -->
     <footer>
         <p>© 2025 Hary Tahiana ANDRIATORAKA - Tous droits réservés.</p>
     </footer>
