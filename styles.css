@@ -44,6 +44,72 @@ nav ul li a:hover {
     text-decoration: underline; /* Effet souligné au survol */
 }
 
+/* Barre de navigation */
+.navigation {
+    position: relative;
+    width: 450px;  /* Largeur de la barre */
+    height: 80px;  /* Hauteur de la barre */
+    background: #034555; /* Couleur de fond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Coins arrondis */
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto; /* Centrage de la barre */
+    z-index: 1;
+}
+
+/* Liste des liens */
+.navigation ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Style des liens */
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: #e67e22; /* Changement de couleur au survol */
+}
+
+/* Définition de la couleur principale avec transparence */
+:root {
+    --highlight-color: #034555; /* Couleur principale */
+    --highlight-transparent: rgba(3, 69, 85, 0.5); /* Version semi-transparente */
+}
+
+/* Style de surbrillance avec zoom */
+.highlight {
+    animation: zoomEffect 2s ease-in-out; /* Applique l'animation */
+}
+
+/* Animation pour le zoom et la couleur */
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1); /* Taille normale */
+        background-color: rgba(3, 69, 85, 0); /* Complètement transparent */
+    }
+    50% {
+        transform: scale(1.1); /* Zoom intermédiaire */
+        background-color: var(--highlight-transparent); /* Couleur semi-transparente */
+    }
+    100% {
+        transform: scale(1); /* Retour à la taille normale */
+        background-color: rgba(3, 69, 85, 0); /* Re-devient transparent */
+    }
+}
+
 /* ======================
    Section Accueil (Hero)
    ====================== */
@@ -133,7 +199,8 @@ nav ul li a:hover {
 }
 
 .experience ul {
-    list-style-type: disc;
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime le décalage à gauche */
     margin-left: 20px;
 }
 
